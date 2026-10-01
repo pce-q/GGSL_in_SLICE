@@ -1,0 +1,93 @@
+#Mon Sep  7 16:56:46 2026
+
+#Image plane optimization
+#Chi2tot(dof=-4): 0.1685
+#Chi2pos: 0.168477
+#Chi2_vel: 0.000000
+#Chi2_mass: 0.000000
+#Chi2formx: 0.000000
+#Chi2formy: 0.000000
+#Chi2l: 0.000000
+#log(Evidence): -10.455218
+#n_Warning: 0
+runmode
+	reference   3 208.537828 77.265978
+	image       1 arcs.dat
+	mass        3 2000 0.3967 mass3.fits
+	end
+grid
+	number  128
+	polar   0
+	nlens   3
+	end
+
+source
+	z_source    0.4067
+	end
+image
+	newton  1
+	end
+potential O1
+	profile         81
+	x_centre        0.000000
+	y_centre        0.000000
+	ellipticity     0.767027
+	angle_pos       8.484190
+	core_radius     0.368831
+	core_radius_kpc 1.971712
+	cut_radius      18.706125
+	cut_radius_kpc  100.000000
+	v_disp          195.464150
+	z_lens          0.3967
+	end
+potential O2
+	profile         81
+	x_centre        -0.518017
+	y_centre        -7.372080
+	ellipticity     0.477407
+	angle_pos       22.141490
+	core_radius     2.268507
+	core_radius_kpc 12.127081
+	cut_radius      18.706125
+	cut_radius_kpc  100.000000
+	v_disp          195.587176
+	z_lens          0.3967
+	end
+potential O3
+	profile     14
+	gamma       0.7414
+	angle_pos   -47.4573
+	kappa       0.0000
+	z_lens      0.3967
+	end
+cline
+	nplan       1 4.5
+	dmax        100.000
+	algorithm   MARCHINGSQUARES
+	connect     1
+	limitHigh   0.20
+	limitLow    0.0500
+	end
+grande
+	iso         0 0 0.000000 0.000000 0.000000
+	name        best
+	profile     0 0
+	contour     1 0
+	large_dist  0.300000
+	end
+cosmology
+	model   1
+	H0      70.000000
+	omegaM  0.300000
+	omegaX  0.700000
+	omegaK  0.
+	wX      -1.000000
+	wa      0.000000
+	end
+field
+	xmin    -20.000000
+	xmax    20.000000
+	ymin    -20.000000
+	ymax    20.000000
+	end
+finish

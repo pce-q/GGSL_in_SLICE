@@ -1,0 +1,96 @@
+runmode
+	reference	3 181.550620 -8.800936 181.550620 -8.800936
+	image	1 arcs.dat
+	mass	3 2000 0.439000 mass3.fits
+	end
+grid
+	number		128
+	polar		0
+	nlens	2
+	end
+source
+	z_source	0.449000
+	end
+image
+	newton		1
+	end
+potential
+0
+	profile		81
+	x_centre	-52.071717
+	y_centre	-18.520920
+	ellipticity	0.445782
+	angle_pos	32.288839
+	core_radius	0.155556
+	core_radius_kpc	0.883270
+	cut_radius	17.611382
+	cut_radius_kpc	100.000000
+	v_disp		135.465366
+	z_lens		0.439000
+	end
+potential
+1
+	profile		81
+	x_centre	-57.066961
+	y_centre	-13.851360
+	ellipticity	0.247815
+	angle_pos	-68.730681
+	core_radius	0.019329
+	core_radius_kpc	0.109753
+	cut_radius	17.611382
+	cut_radius_kpc	100.000000
+	v_disp		59.442260
+	z_lens		0.439000
+	end
+cline
+	nplan		1 4.500000 
+	dmax		100.000000
+	algorithm		MARCHINGSQUARES
+	connect		1
+	limitHigh		0.200000
+	limitLow		0.050000
+	end
+grande
+	iso	0 0 0.000000 0.000000 0.000000
+	name	best
+	profile	0 0
+	contour	1 0
+	large_dist	0.300000
+	end
+cosmology
+	model	1
+	H0	70.000000
+	omegaM	0.300000
+	omegaX	0.700000
+	omegaK	0.000000
+	wX	-1.000000
+	wa	0.000000
+	kcourb	0.000000
+	end
+field
+	xmin	-100.000000
+	xmax	100.000000
+	ymin	-100.000000
+	ymax	100.000000
+	end
+finish
+For z_s = 0.4490  DLS/DS:0.0197
+DLS:0.0055(lt) 23.34(Mpc) DOS:0.2770(lt) 1186.46(Mpc)
+DOL:0.2735(lt) 1171.20(Mpc) DOL_lum:0.5663(lt) 2425.23(Mpc)
+Mcrit:7.215633e-02 (10^12 Msol/kpc^2)
+Conversion Factor @ z = 0.439000, 1 arcsec == 5.678 kpc
+Number of Clumps: 2
+-------- Clump 1: PIEMD Kovner, truncated
+ Total mass: 2.222211(cor) 1.993803 (10^12 M_sol)
+ rcut:17.61(") 100.00(kpc)
+ vdisp:135.47(km/s) b0:0.7939
+ rc:0.16(") 0.88(kpc)
+ rt:17.61(") 100.00(kpc)
+ r_ct:0.0000 r_cr:0.0000
+-------- Clump 2: PIEMD Kovner, truncated
+ Total mass: 0.427877(cor) 0.386865 (10^12 M_sol)
+ rcut:17.61(") 100.00(kpc)
+ vdisp:59.44(km/s) b0:0.1529
+ rc:0.02(") 0.11(kpc)
+ rt:17.61(") 100.00(kpc)
+ r_ct:0.0000 r_cr:0.0000

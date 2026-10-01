@@ -1,0 +1,107 @@
+#Mon Aug 31 20:51:40 2026
+
+#Image plane optimization
+#Chi2tot(dof=12): 5.1548
+#Chi2pos: 5.154760
+#Chi2_vel: 0.000000
+#Chi2_mass: 0.000000
+#Chi2formx: 0.000000
+#Chi2formy: 0.000000
+#Chi2l: 0.000000
+#log(Evidence): -60.437456
+#1.0 z:3.901736 dlsds:0.793575 
+#3.0 z:6.465698 dlsds:0.826181 
+#6.0 z:2.557257 dlsds:0.751249 
+#7.0 z:1.264606 dlsds:0.624375 
+#n_Warning: 0
+runmode
+	reference   3 87.304253 -62.077565
+	image       1 arcs.dat
+	mass        3 2000 0.3755 mass3.fits
+	end
+grid
+	number  128
+	polar   0
+	nlens   3
+	end
+
+source
+	z_source    0.3855
+	end
+image
+	z_m_limit   1 1.0 0 3.901736  0.000000  0.0000 
+	z_m_limit   1 3.0 0 6.465698  0.000000  0.0000 
+	z_m_limit   1 6.0 0 2.557257  0.000000  0.0000 
+	z_m_limit   1 7.0 0 1.264606  0.000000  0.0000 
+	newton      1
+	end
+potential O1
+	profile         81
+	x_centre        0.000000
+	y_centre        0.000000
+	ellipticity     0.552676
+	angle_pos       41.716871
+	core_radius     0.244092
+	core_radius_kpc 1.261186
+	cut_radius      19.354158
+	cut_radius_kpc  100.000000
+	v_disp          243.240551
+	z_lens          0.3755
+	end
+potential O2
+	profile         81
+	x_centre        1.917589
+	y_centre        2.968200
+	ellipticity     0.503811
+	angle_pos       35.670047
+	core_radius     1.754438
+	core_radius_kpc 9.064915
+	cut_radius      19.354158
+	cut_radius_kpc  100.000000
+	v_disp          278.029630
+	z_lens          0.3755
+	end
+potential O3
+	profile         81
+	x_centre        0.005563
+	y_centre        3.419280
+	ellipticity     0.676432
+	angle_pos       -11.214782
+	core_radius     0.345914
+	core_radius_kpc 1.787285
+	cut_radius      19.354158
+	cut_radius_kpc  100.000000
+	v_disp          163.675869
+	z_lens          0.3755
+	end
+cline
+	nplan       1 4.5
+	dmax        100.000
+	algorithm   MARCHINGSQUARES
+	connect     1
+	limitHigh   0.20
+	limitLow    0.0500
+	end
+grande
+	iso         0 0 0.000000 0.000000 0.000000
+	name        best
+	profile     0 0
+	contour     1 0
+	large_dist  0.300000
+	end
+cosmology
+	model   1
+	H0      70.000000
+	omegaM  0.300000
+	omegaX  0.700000
+	omegaK  0.
+	wX      -1.000000
+	wa      0.000000
+	end
+field
+	xmin    -20.000000
+	xmax    20.000000
+	ymin    -20.000000
+	ymax    20.000000
+	end
+finish

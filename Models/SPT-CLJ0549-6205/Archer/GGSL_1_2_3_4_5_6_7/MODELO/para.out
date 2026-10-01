@@ -1,0 +1,121 @@
+runmode
+	reference	3 87.3042528 -62.0775655 87.304253 -62.077565
+	image	1 arcs.dat
+	inverse	3 0.100000 400
+	end
+image
+	multfile	1 arcs.dat
+	form		-1
+	mult_wcs	3
+	z_m_limit	 1 3.0 1 0.500  7.000  0.1000 
+	newton		1
+	sigposArcsec		0.300000
+	end
+grid
+	polar		0
+	nlens	4
+	nlens_opt	1
+	end
+potential	O4
+0
+	profile		81
+	x_centre	0.618180
+	y_centre	1.703160
+	ellipticity	0.600000
+	angle_pos	0.000000
+	core_radius_kpc	5.000000
+	cut_radius_kpc	100.000000
+	v_disp		100.000000
+	z_lens		0.375500
+	end
+limit	O4
+0
+	x_centre	1 0.000000 0.000000 0.000000
+	y_centre	1 0.000000 0.000000 0.000000
+	ellipticity	1 0.000000 0.800000 0.000000
+	angle_pos	1 -1.570796 1.570796 0.001745
+	core_radius_kpc	1 0.010000 50.000000 0.010000
+	v_disp		1 0.010000 500.000000 0.000000
+	end
+potfile
+	filein	3 galcat_archer.cat
+	type	81
+	zlens	0.375500
+	corekpc	0.150000
+	mag0	19.040000
+	sigma	1 50.000000 350.000000
+	cutkpc	1 1.000000 150.000000
+	slope	0 4.000000 0.000000
+	vdslope	0 4.000000 0.000000
+	end
+cline
+	nplan		1 3.000000 
+	dmax		100.000000
+	algorithm		MARCHINGSQUARES
+	limitHigh		1.000000
+	limitLow		0.100000
+	end
+grande
+	iso	0 0 0.000000 0.000000 0.000000
+	name	best
+	profile	0 0
+	contour	1 0
+	large_dist	0.300000
+	end
+cosmology
+	model	1
+	H0	70.000000
+	omegaM	0.300000
+	omegaX	0.700000
+	omegaK	0.000000
+	wX	-1.000000
+	wa	0.000000
+	kcourb	0.000000
+	end
+cosmolimit
+	omegaM	0 0.000000 0.000000
+	omegaX	0 0.000000 0.000000
+	wX	0 0.000000 0.000000
+	wa	0 0.000000 0.000000
+	end
+field
+	xmin	-20.000000
+	xmax	20.000000
+	ymin	-20.000000
+	ymax	20.000000
+	end
+finish
+For z_s = 0.8000  DLS/DS:0.4741
+DLS:0.1715(lt) 734.30(Mpc) DOS:0.3616(lt) 1548.71(Mpc)
+DOL:0.2488(lt) 1065.74(Mpc) DOL_lum:0.4708(lt) 2016.38(Mpc)
+Mcrit:3.290371e-03 (10^12 Msol/kpc^2)
+Conversion Factor @ z = 0.375500, 1 arcsec == 5.167 kpc
+Number of Clumps: 4
+-------- Clump O1: PIEMD Kovner, truncated
+ Total mass: 1.210957(cor) 1.043892 (10^12 M_sol)
+ rcut:19.35(") 100.00(kpc)
+ vdisp:100.00(km/s) b0:0.4326
+ rc:0.97(") 5.00(kpc)
+ rt:19.35(") 100.00(kpc)
+ r_ct:0.0000 r_cr:0.0000
+-------- Clump 7: PIEMD Kovner, truncated
+ Total mass: 0.002063(cor) 0.001624 (10^12 M_sol)
+ rcut:0.16(") 0.83(kpc)
+ vdisp:45.43(km/s) b0:0.0893
+ rc:0.02(") 0.12(kpc)
+ rt:0.16(") 0.83(kpc)
+ r_ct:0.0000 r_cr:0.0000
+-------- Clump 25: PIEMD Kovner, truncated
+ Total mass: 0.001004(cor) 0.000790 (10^12 M_sol)
+ rcut:0.11(") 0.58(kpc)
+ vdisp:37.95(km/s) b0:0.0623
+ rc:0.02(") 0.09(kpc)
+ rt:0.11(") 0.58(kpc)
+ r_ct:0.0000 r_cr:0.0000
+-------- Clump 36: PIEMD Kovner, truncated
+ Total mass: 0.000627(cor) 0.000493 (10^12 M_sol)
+ rcut:0.09(") 0.45(kpc)
+ vdisp:33.73(km/s) b0:0.0492
+ rc:0.01(") 0.07(kpc)
+ rt:0.09(") 0.45(kpc)
+ r_ct:0.0000 r_cr:0.0000

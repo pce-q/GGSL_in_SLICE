@@ -1,0 +1,117 @@
+#Chi2tot: 9.124601
+#Chi2pos: 9.124601
+#Chi2_vel: 0.000000
+#Chi2_mass: 0.000000
+#Chi2formx: 0.000000
+#Chi2formy: 0.000000
+#Chi2l: 0.000000
+#log(Evidence): -51.359335
+runmode
+	reference     3 87.304253 -62.077565
+	inverse   3 0.500000 400
+	end
+image
+	multfile    1 arcs.dat
+	form       -1
+	z_m_limit  1 1.0 3 4.202679 3.659454 0.1000 
+	z_m_limit  2 3.0 3 5.608817 4.212719 0.1000 
+	z_m_limit  3 6.0 3 3.247627 2.678844 0.1000 
+	z_m_limit  4 7.0 3 1.381634 0.843572 0.1000 
+	newton 1
+	mult_wcs    1
+	sigposArcsec   0.500000
+	end
+grid
+	number      128
+	polar     0
+	nlens   3
+	nlens_opt   3
+	end
+potential O1
+	profile       81
+	x_centre     0.000000
+	y_centre     0.000000
+	ellipticity     0.460654
+	angle_pos       59.697607
+	core_radius_kpc     2.993346
+	cut_radius_kpc     100.000000
+	v_disp     268.129493
+	z_lens     0.3755
+	end
+limit O1
+	ellipticity     3 0.519863 0.277280 0.000000
+	angle_pos     3 40.278318 40.278318 0.100000
+	core_radius_kpc     3 1.980003 1.980003 0.010000
+	v_disp    3 238.423211 67.427441 0.000000
+	end
+potential O2
+	profile       81
+	x_centre     1.917589
+	y_centre     2.968200
+	ellipticity     0.782588
+	angle_pos       -9.988555
+	core_radius_kpc     5.298324
+	cut_radius_kpc     100.000000
+	v_disp     230.947319
+	z_lens     0.3755
+	end
+limit O2
+	ellipticity     3 0.295056 0.295056 0.000000
+	angle_pos     3 -1.094085 1.094085 0.100000
+	core_radius_kpc     3 5.005581 5.005581 0.010000
+	v_disp    3 245.227752 126.799373 0.000000
+	end
+potential O3
+	profile       81
+	x_centre     0.005563
+	y_centre     3.419280
+	ellipticity     0.569846
+	angle_pos       41.995491
+	core_radius_kpc     43.565833
+	cut_radius_kpc     100.000000
+	v_disp     359.795296
+	z_lens     0.3755
+	end
+limit O3
+	ellipticity     3 0.413464 0.413464 0.000000
+	angle_pos     3 28.577053 28.577053 0.100000
+	core_radius_kpc     3 41.088959 20.817935 0.010000
+	v_disp    3 341.626938 341.626938 0.000000
+	end
+cline
+	nplan    0
+	dmax     40.000000
+	algorithm   MARCHINGSQUARES
+	limitHigh   10.0
+	limitLow    3.000000
+	end
+large
+	iso         0 0 0.000000 0.000000 0.000000
+	name        best
+	profile      0 0
+	contour     1 0
+	velocity    -1
+	large_dist  0.300000
+	end
+cosmology
+	model       1
+	H0         70.000000
+	omegaM     0.300000
+	omegaX     0.700000
+	omegaK     0.
+	wX         -1.000000
+	wa         0.000000
+	end
+cosmolimit
+	omegaM		0 0.000000 0.000000
+	omegaX		0 0.000000 0.000000
+	wX		0 0.000000 0.000000
+	wa 	0 0.000000 0.000000
+	end
+field
+	xmin     -20.000000
+	xmax     20.000000
+	ymin     -20.000000
+	ymax     20.000000
+	end
+finish

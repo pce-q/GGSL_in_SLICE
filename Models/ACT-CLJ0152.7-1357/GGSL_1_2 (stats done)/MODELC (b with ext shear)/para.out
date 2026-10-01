@@ -1,0 +1,107 @@
+runmode
+	reference	3 28.164476 -13.968479 28.164476 -13.968479
+	image	1 arcs.dat
+	mass	3 2000 0.826900 mass3.fits
+	end
+grid
+	number		128
+	polar		0
+	nlens	3
+	end
+source
+	z_source	0.836900
+	end
+image
+	newton		1
+	end
+potential
+0
+	profile		81
+	x_centre	0.000000
+	y_centre	0.000000
+	ellipticity	0.075231
+	angle_pos	-73.674153
+	core_radius	0.198202
+	core_radius_kpc	1.504663
+	cut_radius	13.172514
+	cut_radius_kpc	100.000000
+	v_disp		214.128535
+	z_lens		0.826900
+	end
+potential
+1
+	profile		81
+	x_centre	-1.788210
+	y_centre	-2.139723
+	ellipticity	0.697661
+	angle_pos	-83.975445
+	core_radius	0.752231
+	core_radius_kpc	5.710611
+	cut_radius	13.172514
+	cut_radius_kpc	100.000000
+	v_disp		252.891397
+	z_lens		0.826900
+	end
+potential
+2
+	profile		14
+	gamma	0.446600
+	angle_pos	21.560200
+	kappa	0.000000
+	z_lens		0.826900
+	end
+cline
+	nplan		1 4.500000 
+	dmax		100.000000
+	algorithm		MARCHINGSQUARES
+	connect		1
+	limitHigh		0.200000
+	limitLow		0.050000
+	end
+grande
+	iso	0 0 0.000000 0.000000 0.000000
+	name	best
+	profile	0 0
+	contour	1 0
+	large_dist	0.300000
+	end
+cosmology
+	model	1
+	H0	70.000000
+	omegaM	0.300000
+	omegaX	0.700000
+	omegaK	0.000000
+	wX	-1.000000
+	wa	0.000000
+	kcourb	0.000000
+	end
+field
+	xmin	-20.000000
+	xmax	20.000000
+	ymin	-20.000000
+	ymax	20.000000
+	end
+finish
+For z_s = 0.8369  DLS/DS:0.0093
+DLS:0.0034(lt) 14.62(Mpc) DOS:0.3670(lt) 1571.97(Mpc)
+DOL:0.3656(lt) 1565.87(Mpc) DOL_lum:1.2203(lt) 5226.20(Mpc)
+Mcrit:1.141914e-01 (10^12 Msol/kpc^2)
+Conversion Factor @ z = 0.826900, 1 arcsec == 7.592 kpc
+Number of Clumps: 3
+-------- Clump 1: PIEMD Kovner, truncated
+ Total mass: 5.552364(cor) 4.951171 (10^12 M_sol)
+ rcut:13.17(") 100.00(kpc)
+ vdisp:214.13(km/s) b0:1.9835
+ rc:0.20(") 1.50(kpc)
+ rt:13.17(") 100.00(kpc)
+ r_ct:0.0000 r_cr:0.0000
+-------- Clump 2: PIEMD Kovner, truncated
+ Total mass: 7.744563(cor) 6.631235 (10^12 M_sol)
+ rcut:13.17(") 100.00(kpc)
+ vdisp:252.89(km/s) b0:2.7666
+ rc:0.75(") 5.71(kpc)
+ rt:13.17(") 100.00(kpc)
+ r_ct:0.0000 r_cr:0.0000
+-------- Clump 3: External shear and kappa 
+ gamma:0.4466
+ kappa:0.0000

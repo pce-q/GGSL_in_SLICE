@@ -1,0 +1,107 @@
+runmode
+	reference     3 328.4033974 17.6954389
+	inverse   3 0.100000 250
+	end
+image
+	multfile    1 mul_MUSE.cat
+	forme       -2
+        newton 1
+	z_m_limit  1 2 1 0.5 5.0 0.0100 
+	z_m_limit  2 8 1 0.5 5.0 0.0100 
+	z_m_limit  3 11 1 0.5 5.0 0.0100 
+	sigposArcsec   0.200000
+	end
+grille
+	nombre      100
+	polaire     0
+	nlentille   50
+	nlens_opt   3
+	end
+potentiel O1
+	profil       81
+	x_centre     25.869
+	y_centre     14.715
+	ellipticite     0.585
+	angle_pos       214.248
+	core_radius_kpc     346.197
+	cut_radius_kpc     2000.000
+	v_disp     1621.786
+	z_lens     0.2310
+	end
+limit O1
+	x_centre     3 25.869 3.0 0.010
+	y_centre     3 14.715 3.0 0.010
+	ellipticite     3 0.542 0.181 0.000
+	angle_pos     3 214.402 3.124 0.100
+	core_radius_kpc     3 355.276 185.304 0.100
+	v_disp    3 1671.861 416.668 0.100
+	end
+potentiel O2
+	profil       81
+	x_centre     0.0
+	y_centre     0.0
+	ellipticite     0.027
+	angle_pos       68.392
+	core_radius_kpc     25.630
+	cut_radius_kpc     452.633
+	v_disp     574.697
+	z_lens     0.2310
+	end
+limit O2
+	ellipticite     3 0.109 0.109 0.000
+	angle_pos     3 65.151 65.151 0.100
+	core_radius_kpc     3 27.354 9.229 0.100
+	cut_radius_kpc     3 325.736 325.736 1.000
+	v_disp    3 586.206 76.290 0.100
+	end
+potentiel O3
+	profil       81
+	x_centre     47.716
+	y_centre     14.175
+	ellipticite     0.394
+	angle_pos       130.719
+	core_radius_kpc     0.050
+	cut_radius_kpc     372.419
+	v_disp     153.408
+	z_lens     0.2310
+	end
+limit O3
+	ellipticite     3 0.275 0.273 0.000
+	angle_pos     3 135.613 45.732 0.100
+	cut_radius_kpc     3 129.872 129.872 1.000
+	v_disp    3 152.939 22.603 0.100
+	end
+potfile
+	filein  3 cgalVzK_align.cat
+	zlens   0.231000
+	type    81
+	corekpc 0.150000
+	mag0    17.6039 #15.3565+1.861+0.3864
+	sigma   3 158.0 27.0
+	cutkpc  0 45.000000 5.000000
+	end
+cline
+	nplan    0 1.250 
+	dmax     0.000
+	algorithm   MARCHINGSQUARES
+	limitHigh   10.0
+	limitLow    1.000
+	end
+grande
+	iso         0 0 0.000 0.000 0.000
+	name        best
+	profil      0 0
+	contour     1 0
+	large_dist  0.300
+	end
+cosmologie
+	H0         70.000
+	omegaM     0.300
+	omegaX     0.700
+	omegaK     0.
+	wX         -1.000
+	end
+champ
+	dmax     70.000
+	end
+fini

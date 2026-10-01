@@ -1,0 +1,102 @@
+#Thu Sep  3 14:41:35 2026
+
+#Image plane optimization
+#Chi2tot(dof=27): 161733.4417
+#Chi2pos: 161733.441724
+#Chi2_vel: 0.000000
+#Chi2_mass: 0.000000
+#Chi2formx: 0.000000
+#Chi2formy: 0.000000
+#Chi2l: 0.000000
+#log(Evidence): -80852.740289
+#3.0 z:6.026685 dlsds:0.822484 
+#7.0 z:5.505356 dlsds:0.817383 
+#8.0 z:2.801154 dlsds:0.761944 
+#n_Warning: 0
+runmode
+	reference     3 87.333313 -62.087076
+	image     1 arcs.dat
+	end
+grid
+	number      30
+	polar     0
+	nlens   3
+	end
+image
+	z_m_limit 1 3.0 0 6.026685  0.000000  0.0000 
+	z_m_limit 1 7.0 0 5.505356  0.000000  0.0000 
+	z_m_limit 1 8.0 0 2.801154  0.000000  0.0000 
+	newton 1
+	end
+potential 7
+	profile       81
+	x_centre     48.980200
+	y_centre     34.208107
+	ellipticity     0.139332
+	angle_pos       -82.510000
+	core_radius         0.009367
+	core_radius_kpc     0.048396
+	cut_radius         0.241747
+	cut_radius_kpc     1.249071
+	v_disp     29.932211
+	mag		  19.456400
+	z_lens     0.3755
+	end
+potential 25
+	profile       81
+	x_centre     50.884867
+	y_centre     37.231238
+	ellipticity     0.287728
+	angle_pos       87.240000
+	core_radius         0.006535
+	core_radius_kpc     0.033765
+	cut_radius         0.168664
+	cut_radius_kpc     0.871459
+	v_disp     25.001657
+	mag		  20.238100
+	z_lens     0.3755
+	end
+potential 36
+	profile       81
+	x_centre     48.998602
+	y_centre     37.653299
+	ellipticity     0.127302
+	angle_pos       -0.390000
+	core_radius         0.005163
+	core_radius_kpc     0.026674
+	cut_radius         0.133242
+	cut_radius_kpc     0.688441
+	v_disp     22.221778
+	mag		  20.750000
+	z_lens     0.3755
+	end
+cline
+	nplan    1 3.000000 
+	dmax     100.000000
+	algorithm   MARCHINGSQUARES
+	limitHigh   1.0
+	limitLow    0.100000
+	end
+grande
+	iso         0 0 0.000000 0.000000 0.000000
+	name        best
+	profile      0 0
+	contour     1 0
+	large_dist  0.300000
+	end
+cosmology
+	model       1
+	H0        70.000000
+	omegaM    0.300000
+	omegaX    0.700000
+	omegaK    0.
+	wX        -1.000000
+	wa        0.000000
+	end
+field
+	xmin     -89.996115
+	xmax     90.003885
+	ymin     -90.001986
+	ymax     89.998014
+	end
+finish

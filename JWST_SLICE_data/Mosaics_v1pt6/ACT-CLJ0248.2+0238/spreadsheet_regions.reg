@@ -1,0 +1,9 @@
+global color=cyan dashlist=8 3 width=1 font="helvetica 10 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+fk5
+circle(42.0473571,2.6357111,1.0")
+circle(42.0412805,2.6551342,1.0")
+circle(42.0433115,2.6528615,1.0")
+circle(42.0417351,2.6511595,1.0")
+circle(42.0570619,2.656725,1.0")
+circle(42.0647851,2.6521563,1.0")
+circle(42.0443943,2.6327474,1.0")

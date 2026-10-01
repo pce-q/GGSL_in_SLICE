@@ -1,0 +1,106 @@
+runmode
+	reference	3 28.164467 -13.968482 28.164467 -13.968482
+	image	1 arcs.dat
+	mass	3 2000 0.826900 mass3.fits
+	end
+grid
+	number		128
+	polar		0
+	nlens	3
+	end
+source
+	z_source	0.850000
+	end
+image
+	newton		1
+	end
+potential
+0
+	profile		81
+	x_centre	0.000000
+	y_centre	0.000000
+	ellipticity	0.777386
+	angle_pos	-84.098230
+	core_radius	0.031747
+	core_radius_kpc	0.241009
+	cut_radius	13.172514
+	cut_radius_kpc	100.000000
+	v_disp		254.079323
+	z_lens		0.826900
+	end
+potential
+1
+	profile		14
+	gamma	0.722200
+	angle_pos	24.663600
+	kappa	0.000000
+	z_lens		0.826900
+	end
+potential
+2
+	profile		81
+	x_centre	-0.926000
+	y_centre	-1.883000
+	ellipticity	0.600000
+	angle_pos	45.000000
+	core_radius	0.658626
+	core_radius_kpc	5.000000
+	cut_radius	13.172514
+	cut_radius_kpc	100.000000
+	v_disp		100.000000
+	z_lens		0.826900
+	end
+cline
+	nplan		1 4.500000 
+	dmax		40.000000
+	algorithm		MARCHINGSQUARES
+	limitHigh		0.300000
+	limitLow		0.020000
+	end
+grande
+	iso	0 0 0.000000 0.000000 0.000000
+	name	best
+	profile	0 0
+	contour	1 0
+	large_dist	0.300000
+	end
+cosmology
+	model	1
+	H0	70.000000
+	omegaM	0.300000
+	omegaX	0.700000
+	omegaK	0.000000
+	wX	-1.000000
+	wa	0.000000
+	kcourb	0.000000
+	end
+field
+	xmin	-20.000000
+	xmax	20.000000
+	ymin	-20.000000
+	ymax	20.000000
+	end
+finish
+For z_s = 0.8500  DLS/DS:0.0211
+DLS:0.0078(lt) 33.40(Mpc) DOS:0.3689(lt) 1579.72(Mpc)
+DOL:0.3656(lt) 1565.87(Mpc) DOL_lum:1.2203(lt) 5226.20(Mpc)
+Mcrit:5.022598e-02 (10^12 Msol/kpc^2)
+Conversion Factor @ z = 0.826900, 1 arcsec == 7.592 kpc
+Number of Clumps: 3
+-------- Clump 1: PIEMD Kovner, truncated
+ Total mass: 7.817492(cor) 7.058917 (10^12 M_sol)
+ rcut:13.17(") 100.00(kpc)
+ vdisp:254.08(km/s) b0:2.7927
+ rc:0.03(") 0.24(kpc)
+ rt:13.17(") 100.00(kpc)
+ r_ct:0.0000 r_cr:0.0000
+-------- Clump 2: External shear and kappa 
+ gamma:0.7222
+ kappa:0.0000
+-------- Clump 3: PIEMD Kovner, truncated
+ Total mass: 1.210957(cor) 1.043892 (10^12 M_sol)
+ rcut:13.17(") 100.00(kpc)
+ vdisp:100.00(km/s) b0:0.4326
+ rc:0.66(") 5.00(kpc)
+ rt:13.17(") 100.00(kpc)
+ r_ct:0.0000 r_cr:0.0000

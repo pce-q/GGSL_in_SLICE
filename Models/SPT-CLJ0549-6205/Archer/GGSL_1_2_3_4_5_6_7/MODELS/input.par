@@ -1,0 +1,140 @@
+runmode
+	reference 3 87.3042528 -62.0775655 
+	image    1 arcs.dat
+	inverse   3 0.1 400
+	end
+image
+	multfile     1 arcs.dat
+	form         -1
+	mult_wcs     3
+    z_m_limit  1 1.0 1 2.5 3.7 0.1000
+    z_m_limit  1 2.0 1 2.8 4.0 0.1000
+    z_m_limit  1 3.0 1 2.5 4.0 0.1000
+    z_m_limit  1 4.0 1 2.8 4.0 0.1000
+    z_m_limit  1 5.0 1 2.8 4.0 0.1000
+    z_m_limit  1 6.0 1 2.5 3.7 0.1000
+    z_m_limit  1 9.0 1 2.5 3.7 0.1000
+    z_m_limit  1 10.0 1 2.8 4.0 0.1000
+    z_m_limit  1 11.0 1 2.8 4.0 0.1000
+    z_m_limit  1 12.0 1 2.5 4.0 0.1000
+	newton       1
+	sigposArcsec 0.3
+	end
+grid
+	profile     128
+	polar       0
+	nlens       4
+	nlens_opt   4
+	end
+potential 7
+	profile         81
+	x_centre        0.000000
+	y_centre        0.000000
+	ellipticity     0.139332
+	angle_pos       -82.510000
+	core_radius_kpc 0.123826
+	cut_radius_kpc  8.797436
+	v_disp          278.664576
+	z_lens          0.3755
+	end
+limit	7	
+	x_centre        0 -5 5 0.000 
+	y_centre        0 -5 5 0.000 
+	ellipticity     1 0.10 0.16 0.000
+	angle_pos       1 -88 -76 0.100
+	core_radius_kpc 1 0.3 11.0 0.010  # changed rc limits
+	v_disp          1 10.0 350.0 0.000 
+	end	
+potential 25
+	profile       81
+	x_centre     1.917642
+	y_centre     2.968183
+	ellipticity     0.287728
+	angle_pos       87.240000
+	core_radius_kpc     0.086392
+	cut_radius_kpc     6.137848
+	v_disp     232.761830
+	z_lens     0.3755
+	end
+limit	25
+	x_centre        0 -5 5 0.000
+	y_centre        0 -5 5 0.000
+	ellipticity     1 0.22 0.34 0.000
+	angle_pos       1 82 90 0.100
+	core_radius_kpc 1 0.3 11.0 0.010  # changed rc limits
+	v_disp          1 10.0 350.0 0.000
+	end
+potential 36
+	profile       81
+	x_centre     0.005563
+	y_centre     3.419280
+	ellipticity     0.127302
+	angle_pos       -0.390000
+	core_radius_kpc     0.068248
+	cut_radius_kpc     4.848820
+	v_disp     206.881551
+	z_lens     0.3755
+	end
+limit	36
+	x_centre        0 -5 5 0.000
+	y_centre        0 -5 5 0.000
+	ellipticity     1 0.06 0.18 0.000
+	angle_pos       1 -6 6 0.100
+	core_radius_kpc 1 0.3 11.0 0.010  # changed rc limits
+	v_disp          1 10.0 350.0 0.000
+	end
+potential	O4	
+	profile         81 
+	x_centre        0.3502
+	y_centre        1.7381
+	ellipticity     0.600000 
+	angle_pos       0.000000 
+	core_radius_kpc 5.0 
+	cut_radius_kpc  100.0 
+	v_disp          100.0 
+	z_lens          0.3755 
+	end	
+limit	O4	
+	x_centre        1 −1.4698 2.1702 0.001
+	y_centre        1 −0.0819 3.5581 0.001
+	ellipticity     1 0.0 0.80 0.000 
+	angle_pos       1 -90 90 0.100 
+	core_radius_kpc 1 0.01 50 0.010 
+	v_disp          1 0.01 500.0 0.000 
+	end	
+cline
+	nplan    1 3.0
+	dmax     100.000
+        algorithm   MARCHINGSQUARES
+        limitHigh   1.0
+        limitLow    0.100
+	end
+grande
+	iso         0 0 0.000 0.000 0.000 
+	name        best 
+	profile     0 0 
+	contour     1 0 
+	large_dist  0.300 
+	end	
+cosmology
+	model   1 
+	H0      70.000 
+	omegaM  0.300 
+	omegaX  0.700 
+	omegaK  0. 
+	wX      -1.000 
+	wa      0.000 
+	end	
+cosmolimit
+	omegaM  0 0.000 0.000 
+	omegaX  0 0.000 0.000 
+	wX      0 0.000 0.000 
+	wa      0 0.000 0.000 
+	end	
+field
+	xmin    -20.000 
+	xmax    20.000 
+	ymin    -20.000 
+	ymax    20.000 
+	end	
+finish

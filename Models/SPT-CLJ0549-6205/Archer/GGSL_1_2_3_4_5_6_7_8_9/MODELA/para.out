@@ -1,0 +1,175 @@
+runmode
+	reference	3 87.3042528 -62.0775655 87.304253 -62.077565
+	inverse	3 0.500000 400
+	end
+image
+	multfile	1 arcs.dat
+	newton		1
+	forme		-1
+	mult_wcs	1
+	sigposArcsec		0.500000
+	end
+grille
+	nombre		128
+	polaire		0
+	nlentille	4
+	nlens_opt	4
+	end
+source
+	z_source	0.385500
+	end
+potential	O1
+0
+	profile		81
+	x_centre	0.000000
+	y_centre	0.000000
+	ellipticity	0.171044
+	angle_pos	89.999940
+	core_radius_kpc	5.000000
+	cut_radius_kpc	100.000000
+	v_disp		100.000000
+	z_lens		0.375500
+	end
+limit	O1
+0
+	x_centre	0 -5.000000 5.000000 0.000000
+	y_centre	0 -5.000000 5.000000 0.000000
+	ellipticity	1 0.000000 0.800000 0.000000
+	angle_pos	1 -1.570796 1.570796 0.001745
+	core_radius_kpc	1 0.300000 11.000000 0.010000
+	v_disp		1 10.000000 350.000000 0.000000
+	end
+potential	O2
+1
+	profile		81
+	x_centre	1.917589
+	y_centre	2.968200
+	ellipticity	0.266626
+	angle_pos	89.999940
+	core_radius_kpc	5.000000
+	cut_radius_kpc	100.000000
+	v_disp		100.000000
+	z_lens		0.375500
+	end
+limit	O2
+1
+	x_centre	0 -5.000000 5.000000 0.000000
+	y_centre	0 -5.000000 5.000000 0.000000
+	ellipticity	1 0.000000 0.800000 0.000000
+	angle_pos	1 -1.570796 1.570796 0.001745
+	core_radius_kpc	1 0.300000 11.000000 0.010000
+	v_disp		1 10.000000 350.000000 0.000000
+	end
+potential	O3
+2
+	profile		81
+	x_centre	0.005563
+	y_centre	3.419280
+	ellipticity	0.029191
+	angle_pos	-0.000060
+	core_radius_kpc	5.000000
+	cut_radius_kpc	100.000000
+	v_disp		100.000000
+	z_lens		0.375500
+	end
+limit	O3
+2
+	x_centre	0 -5.000000 5.000000 0.000000
+	y_centre	0 -5.000000 5.000000 0.000000
+	ellipticity	1 0.000000 0.800000 0.000000
+	angle_pos	1 -1.570796 1.570796 0.001745
+	core_radius_kpc	1 0.300000 11.000000 0.010000
+	v_disp		1 10.000000 350.000000 0.000000
+	end
+potential	O4
+3
+	profile		81
+	x_centre	0.618180
+	y_centre	1.703160
+	ellipticity	0.600000
+	angle_pos	0.000000
+	core_radius_kpc	5.000000
+	cut_radius_kpc	100.000000
+	v_disp		100.000000
+	z_lens		0.375500
+	end
+limit	O4
+3
+	x_centre	1 -0.918000 0.918000 0.000000
+	y_centre	1 -0.918000 0.918000 0.000000
+	ellipticity	1 0.000000 0.800000 0.000000
+	angle_pos	1 -1.570796 1.570796 0.001745
+	core_radius_kpc	1 0.010000 50.000000 0.010000
+	v_disp		1 10.000000 500.000000 0.000000
+	end
+cline
+	nplan		0
+	dmax		40.000000
+	algorithm		MARCHINGSQUARES
+	limitHigh		10.000000
+	limitLow		3.000000
+	end
+grande
+	iso	0 0 0.000000 0.000000 0.000000
+	name	best
+	profile	0 0
+	contour	1 0
+	large_dist	0.300000
+	end
+cosmology
+	model	1
+	H0	70.000000
+	omegaM	0.300000
+	omegaX	0.700000
+	omegaK	0.000000
+	wX	-1.000000
+	wa	0.000000
+	kcourb	0.000000
+	end
+cosmolimit
+	omegaM	0 0.000000 0.000000
+	omegaX	0 0.000000 0.000000
+	wX	0 0.000000 0.000000
+	wa	0 0.000000 0.000000
+	end
+field
+	xmin	-20.000000
+	xmax	20.000000
+	ymin	-20.000000
+	ymax	20.000000
+	end
+finish
+For z_s = 0.3855  DLS/DS:0.0234
+DLS:0.0059(lt) 25.33(Mpc) DOS:0.2530(lt) 1083.38(Mpc)
+DOL:0.2488(lt) 1065.74(Mpc) DOL_lum:0.4708(lt) 2016.38(Mpc)
+Mcrit:6.672713e-02 (10^12 Msol/kpc^2)
+Conversion Factor @ z = 0.375500, 1 arcsec == 5.167 kpc
+Number of Clumps: 4
+-------- Clump O1: PIEMD Kovner, truncated
+ Total mass: 1.210957(cor) 1.043892 (10^12 M_sol)
+ rcut:19.35(") 100.00(kpc)
+ vdisp:100.00(km/s) b0:0.4326
+ rc:0.97(") 5.00(kpc)
+ rt:19.35(") 100.00(kpc)
+ r_ct:0.0000 r_cr:0.0000
+-------- Clump O2: PIEMD Kovner, truncated
+ Total mass: 1.210957(cor) 1.043892 (10^12 M_sol)
+ rcut:19.35(") 100.00(kpc)
+ vdisp:100.00(km/s) b0:0.4326
+ rc:0.97(") 5.00(kpc)
+ rt:19.35(") 100.00(kpc)
+ r_ct:0.0000 r_cr:0.0000
+-------- Clump O3: PIEMD Kovner, truncated
+ Total mass: 1.210957(cor) 1.043892 (10^12 M_sol)
+ rcut:19.35(") 100.00(kpc)
+ vdisp:100.00(km/s) b0:0.4326
+ rc:0.97(") 5.00(kpc)
+ rt:19.35(") 100.00(kpc)
+ r_ct:0.0000 r_cr:0.0000
+-------- Clump O4: PIEMD Kovner, truncated
+ Total mass: 1.210957(cor) 1.043892 (10^12 M_sol)
+ rcut:19.35(") 100.00(kpc)
+ vdisp:100.00(km/s) b0:0.4326
+ rc:0.97(") 5.00(kpc)
+ rt:19.35(") 100.00(kpc)
+ r_ct:0.0000 r_cr:0.0000

@@ -1,0 +1,23 @@
+#Nsample
+#ln(Lhood)
+#O1 : x (arcsec)
+#O1 : y (arcsec)
+#O1 : emass
+#O1 : theta (deg)
+#O1 : rc (arcsec)
+#O1 : sigma (km/s)
+#O2 : emass
+#O2 : theta (deg)
+#O2 : rc (arcsec)
+#O2 : sigma (km/s)
+#Redshift of 1.2
+#Redshift of 3.2
+#Redshift of 6.2
+#Redshift of 7.2
+#Redshift of 8.2
+#Redshift of 10.2
+#Redshift of 11.2
+#Redshift of 12.2
+#Pot0 rcut (arcsec)
+#Pot0 sigma (km/s)
+#Chi2

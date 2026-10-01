@@ -1,0 +1,113 @@
+#Chi2tot: 0.273045
+#Chi2pos: 0.273045
+#Chi2_vel: 0.000000
+#Chi2_mass: 0.000000
+#Chi2formx: 0.000000
+#Chi2formy: 0.000000
+#Chi2l: 0.000000
+#log(Evidence): -19.822696
+runmode
+	reference     3 180.300765 23.099214
+	inverse   3 0.500000 400
+	end
+image
+	multfile    1 arcs.dat
+	form       -1
+	newton 1
+	mult_wcs    1
+	sigposArcsec   0.500000
+	end
+grid
+	number      128
+	polar     0
+	nlens   3
+	nlens_opt   3
+	end
+potential O1
+	profile       81
+	x_centre     0.000000
+	y_centre     0.000000
+	ellipticity     0.521302
+	angle_pos       -12.370295
+	core_radius_kpc     12.785089
+	cut_radius_kpc     100.000000
+	v_disp     284.621945
+	z_lens     0.2690
+	end
+limit O1
+	ellipticity     3 0.563546 0.563546 0.000000
+	angle_pos     3 2.619381 2.619381 0.100000
+	core_radius_kpc     3 17.472207 17.472207 0.010000
+	v_disp    3 291.751737 291.751737 0.000000
+	end
+potential O2
+	profile       81
+	x_centre     -1.092092
+	y_centre     0.350280
+	ellipticity     0.720343
+	angle_pos       -5.329598
+	core_radius_kpc     26.737619
+	cut_radius_kpc     100.000000
+	v_disp     409.241880
+	z_lens     0.2690
+	end
+limit O2
+	ellipticity     3 0.638859 0.583343 0.000000
+	angle_pos     3 -9.519120 9.519120 0.100000
+	core_radius_kpc     3 17.761824 17.761824 0.010000
+	v_disp    3 365.561392 284.950367 0.000000
+	end
+potential O3
+	profile       81
+	x_centre     2.114976
+	y_centre     -6.692040
+	ellipticity     0.112595
+	angle_pos       -67.939455
+	core_radius_kpc     0.515413
+	cut_radius_kpc     100.000000
+	v_disp     219.916403
+	z_lens     0.2690
+	end
+limit O3
+	ellipticity     3 0.294620 0.294620 0.000000
+	angle_pos     3 -4.695328 4.695328 0.100000
+	core_radius_kpc     3 6.651878 6.651878 0.010000
+	v_disp    3 260.868165 243.844989 0.000000
+	end
+cline
+	nplan    0
+	dmax     40.000000
+	algorithm   MARCHINGSQUARES
+	limitHigh   10.0
+	limitLow    3.000000
+	end
+large
+	iso         0 0 0.000000 0.000000 0.000000
+	name        best
+	profile      0 0
+	contour     1 0
+	velocity    -1
+	large_dist  0.300000
+	end
+cosmology
+	model       1
+	H0         70.000000
+	omegaM     0.300000
+	omegaX     0.700000
+	omegaK     0.
+	wX         -1.000000
+	wa         0.000000
+	end
+cosmolimit
+	omegaM		0 0.000000 0.000000
+	omegaX		0 0.000000 0.000000
+	wX		0 0.000000 0.000000
+	wa 	0 0.000000 0.000000
+	end
+field
+	xmin     -20.000000
+	xmax     20.000000
+	ymin     -20.000000
+	ymax     20.000000
+	end
+finish

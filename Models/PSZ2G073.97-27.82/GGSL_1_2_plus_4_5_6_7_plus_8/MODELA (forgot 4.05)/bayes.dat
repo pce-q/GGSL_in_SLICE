@@ -1,0 +1,15 @@
+#Nsample
+#ln(Lhood)
+#O1 : emass
+#O1 : theta (deg)
+#O1 : rc (arcsec)
+#O1 : sigma (km/s)
+#O2 : emass
+#O2 : theta (deg)
+#O2 : rc (arcsec)
+#O2 : sigma (km/s)
+#O3 : emass
+#O3 : theta (deg)
+#O3 : rc (arcsec)
+#O3 : sigma (km/s)
+#Chi2

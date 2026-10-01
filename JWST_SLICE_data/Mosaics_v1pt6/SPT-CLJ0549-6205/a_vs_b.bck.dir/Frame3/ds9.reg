@@ -1,0 +1,71 @@
+# Region file format: DS9 version 4.1
+global color=green dashlist=8 3 width=1 font="helvetica 10 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+fk5
+ellipse(87.3049658,-62.0777504,0.107",0.107",0) # font="helvetica 14 normal" text={1.5}
+ellipse(87.3040524,-62.0770555,0.145",0.145",0) # font="helvetica 14 normal" text={1.2}
+ellipse(87.3029611,-62.0765655,0.139",0.139",0) # font="helvetica 14 normal" text={1.3}
+ellipse(87.3052899,-62.0767541,0.139",0.139",0) # font="helvetica 14 normal" text={1.4}
+ellipse(87.3039236,-62.0765952,0.119",0.119",0) # font="helvetica 14 normal" text={1.1}
+ellipse(87.3035886,-62.0764060,0.105",0.105",0) # font="helvetica 14 normal" text={2.1}
+ellipse(87.3041949,-62.0763202,0.090",0.090",0) # font="helvetica 14 normal" text={2.2}
+ellipse(87.3024470,-62.0779493,0.101",0.101",0) # font="helvetica 14 normal" text={1.6}
+ellipse(87.3026918,-62.0776811,0.455",0.094",66.7) # color=magenta font="helvetica 14 normal" text={1.5}
+ellipse(87.3046821,-62.0762004,0.342",0.092",22.88) # color=magenta font="helvetica 14 normal" text={1.5}
+ellipse(87.3038596,-62.0769798,0.364",0.165",168.36) # color=magenta font="helvetica 14 normal" text={1.5}
+ellipse(87.3043488,-62.0775781,0.056",0.027",22.67) # color=magenta font="helvetica 14 normal" text={1.5}
+ellipse(87.3031332,-62.0767077,0.094",0.071",52.51) # color=magenta font="helvetica 14 normal" text={1.5}
+ellipse(87.3028795,-62.0766028,0.150",0.136",35.11) # color=magenta font="helvetica 14 normal" text={1.5}
+ellipse(87.3049658,-62.0777504,0.107",0.107",38.7) # color=magenta font="helvetica 14 normal" text={1.5}
+ellipse(87.3052247,-62.0765590,0.650",0.063",70.4) # color=magenta font="helvetica 14 normal" text={1.2}
+ellipse(87.3048466,-62.0763112,0.612",0.064",40.93) # color=magenta font="helvetica 14 normal" text={1.2}
+ellipse(87.3028521,-62.0778713,0.325",0.048",56.16) # color=magenta font="helvetica 14 normal" text={1.2}
+ellipse(87.3052344,-62.0769837,0.293",0.102",90.92) # color=magenta font="helvetica 14 normal" text={1.2}
+ellipse(87.3043419,-62.0775578,0.046",0.020",47.76) # color=magenta font="helvetica 14 normal" text={1.2}
+ellipse(87.3050985,-62.0777087,0.128",0.059",152.88) # color=magenta font="helvetica 14 normal" text={1.2}
+ellipse(87.3040524,-62.0770555,0.145",0.145",95.43) # color=magenta font="helvetica 14 normal" text={1.2}
+ellipse(87.3052537,-62.0767647,1.015",0.118",92.39) # color=magenta font="helvetica 14 normal" text={1.3}
+ellipse(87.3052304,-62.0768453,1.002",0.127",103.39) # color=magenta font="helvetica 14 normal" text={1.3}
+ellipse(87.3046012,-62.0762216,0.315",0.081",18.91) # color=magenta font="helvetica 14 normal" text={1.3}
+ellipse(87.3035244,-62.0766536,0.399",0.107",0.83) # color=magenta font="helvetica 14 normal" text={1.3}
+ellipse(87.3040135,-62.0766481,0.245",0.067",177.19) # color=magenta font="helvetica 14 normal" text={1.3}
+ellipse(87.3027121,-62.0777643,0.274",0.079",61.54) # color=magenta font="helvetica 14 normal" text={1.3}
+ellipse(87.3040747,-62.0770021,0.284",0.111",177.21) # color=magenta font="helvetica 14 normal" text={1.3}
+ellipse(87.3043651,-62.0775703,0.046",0.024",15.32) # color=magenta font="helvetica 14 normal" text={1.3}
+ellipse(87.3031744,-62.0766744,0.138",0.108",142.22) # color=magenta font="helvetica 14 normal" text={1.3}
+ellipse(87.3050098,-62.0777173,0.094",0.083",91.8) # color=magenta font="helvetica 14 normal" text={1.3}
+ellipse(87.3029611,-62.0765655,0.139",0.139",136.62) # color=magenta font="helvetica 14 normal" text={1.3}
+ellipse(87.3039231,-62.0766463,0.513",0.010",0.51) # color=magenta font="helvetica 14 normal" text={1.4}
+ellipse(87.3036501,-62.0766484,0.647",0.014",177.52) # color=magenta font="helvetica 14 normal" text={1.4}
+ellipse(87.3046928,-62.0762373,0.386",0.012",20.46) # color=magenta font="helvetica 14 normal" text={1.4}
+ellipse(87.3040045,-62.0770131,0.299",0.017",162.71) # color=magenta font="helvetica 14 normal" text={1.4}
+ellipse(87.3043517,-62.0775686,0.054",0.003",12.92) # color=magenta font="helvetica 14 normal" text={1.4}
+ellipse(87.3027552,-62.0777827,0.217",0.017",39.22) # color=magenta font="helvetica 14 normal" text={1.4}
+ellipse(87.3029788,-62.0765850,0.189",0.019",68.91) # color=magenta font="helvetica 14 normal" text={1.4}
+ellipse(87.3050271,-62.0777270,0.108",0.013",57.43) # color=magenta font="helvetica 14 normal" text={1.4}
+ellipse(87.3031412,-62.0766707,0.130",0.017",14.16) # color=magenta font="helvetica 14 normal" text={1.4}
+ellipse(87.3052706,-62.0768429,0.229",0.087",135.65) # color=magenta font="helvetica 14 normal" text={1.4}
+ellipse(87.3052899,-62.0767541,0.139",0.139",72.07) # color=magenta font="helvetica 14 normal" text={1.4}
+ellipse(87.3028953,-62.0779223,0.289",0.027",64.98) # color=magenta font="helvetica 14 normal" text={1.1}
+ellipse(87.3051432,-62.0776811,0.189",0.025",126.33) # color=magenta font="helvetica 14 normal" text={1.1}
+ellipse(87.3051999,-62.0770521,0.335",0.045",98.64) # color=magenta font="helvetica 14 normal" text={1.1}
+ellipse(87.3041263,-62.0770834,0.216",0.050",44.74) # color=magenta font="helvetica 14 normal" text={1.1}
+ellipse(87.3043430,-62.0775495,0.046",0.012",86.68) # color=magenta font="helvetica 14 normal" text={1.1}
+ellipse(87.3036445,-62.0765754,0.181",0.161",103.46) # color=magenta font="helvetica 14 normal" text={1.1}
+ellipse(87.3039236,-62.0765952,0.119",0.119",119.75) # color=magenta font="helvetica 14 normal" text={1.1}
+ellipse(87.3045736,-62.0763502,1.997",0.028",28.43) # color=magenta font="helvetica 14 normal" text={2.1}
+ellipse(87.3046849,-62.0763833,1.779",0.028",36.34) # color=magenta font="helvetica 14 normal" text={2.1}
+ellipse(87.3028048,-62.0779583,0.133",0.017",46.43) # color=magenta font="helvetica 14 normal" text={2.1}
+ellipse(87.3045181,-62.0771219,0.206",0.039",168.81) # color=magenta font="helvetica 14 normal" text={2.1}
+ellipse(87.3049095,-62.0771355,0.227",0.044",22.43) # color=magenta font="helvetica 14 normal" text={2.1}
+ellipse(87.3041781,-62.0765748,0.088",0.020",23.31) # color=magenta font="helvetica 14 normal" text={2.1}
+ellipse(87.3043981,-62.0775373,0.032",0.009",30.98) # color=magenta font="helvetica 14 normal" text={2.1}
+ellipse(87.3051135,-62.0775931,0.071",0.030",154) # color=magenta font="helvetica 14 normal" text={2.1}
+ellipse(87.3035886,-62.0764060,0.105",0.105",123.73) # color=magenta font="helvetica 14 normal" text={2.1}
+ellipse(87.3046833,-62.0764121,0.419",0.008",29.81) # color=magenta font="helvetica 14 normal" text={2.2}
+ellipse(87.3038283,-62.0763478,0.478",0.012",170.08) # color=magenta font="helvetica 14 normal" text={2.2}
+ellipse(87.3027875,-62.0779694,0.120",0.004",64.74) # color=magenta font="helvetica 14 normal" text={2.2}
+ellipse(87.3050970,-62.0775699,0.102",0.005",105.72) # color=magenta font="helvetica 14 normal" text={2.2}
+ellipse(87.3044134,-62.0775331,0.027",0.002",87.29) # color=magenta font="helvetica 14 normal" text={2.2}
+ellipse(87.3042214,-62.0765667,0.057",0.007",86.68) # color=magenta font="helvetica 14 normal" text={2.2}
+ellipse(87.3041949,-62.0763202,0.090",0.090",3.75) # color=magenta font="helvetica 14 normal" text={2.2}
+ellipse(87.3024470,-62.0779493,0.101",0.101",166.41) # color=magenta font="helvetica 14 normal" text={1.6}

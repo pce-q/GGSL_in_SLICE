@@ -1,0 +1,127 @@
+#Chi2tot: 205.324405
+#Chi2pos: 205.324405
+#Chi2_vel: 0.000000
+#Chi2_mass: 0.000000
+#Chi2formex: 0.000000
+#Chi2formey: 0.000000
+#Chi2l: 0.000000
+#log(Evidence): -111.348105
+runmode
+	reference     3 328.403397 17.695439
+	inverse   3 0.100000 250
+	end
+image
+	multfile    14 mul_MUSE.cat
+	forme       -2
+	newton 1
+	sigposArcsec   0.200000
+	end
+grille
+	nombre      100
+	polaire     0
+	nlentille   49
+	nlens_opt   0
+	end
+potentiel O1
+	profil       81
+	x_centre     28.873822
+	y_centre     15.532434
+	ellipticite     0.671154
+	angle_pos       214.901211
+	core_radius_kpc     257.184451
+	cut_radius_kpc     2000.000000
+	v_disp     1448.347891
+	z_lens     0.2310
+	end
+limit O1
+	x_centre     0 27.872598 4.843768 0.010000
+	y_centre     0 15.019744 2.859153 0.010000
+	ellipticite     0 0.684525 0.063789 0.000000
+	angle_pos     0 214.977165 0.835103 0.100000
+	core_radius_kpc     0 255.506949 29.062306 0.100000
+	v_disp    0 1447.074026 118.641782 0.100000
+	end
+potentiel O2
+	profil       81
+	x_centre     0.000000
+	y_centre     0.000000
+	ellipticite     0.288098
+	angle_pos       30.524887
+	core_radius_kpc     38.258126
+	cut_radius_kpc     106.303642
+	v_disp     641.684112
+	z_lens     0.2310
+	end
+limit O2
+	ellipticite     0 0.272017 0.080709 0.000000
+	angle_pos     0 29.674583 6.070874 0.100000
+	core_radius_kpc     0 34.875108 9.561049 0.100000
+	cut_radius_kpc     0 112.353388 112.353388 1.000000
+	v_disp    0 619.795562 56.112345 0.100000
+	end
+potentiel O3
+	profil       81
+	x_centre     47.716000
+	y_centre     14.175000
+	ellipticite     0.268366
+	angle_pos       213.317957
+	core_radius_kpc     0.050000
+	cut_radius_kpc     186.135023
+	v_disp     128.896230
+	z_lens     0.2310
+	end
+limit O3
+	ellipticite     0 0.258803 0.258803 0.000000
+	angle_pos     0 128.601348 128.601348 0.100000
+	cut_radius_kpc     0 180.394915 180.394915 1.000000
+	v_disp    0 131.253666 14.254457 0.100000
+	end
+potfile0
+	filein  3 cgalVzK_align.cat
+	zlens   0.231000
+	type    81
+	corekpc 1 0.150000 2.0 0.01
+	mag0    17.603900              # 
+	sigma   0 165.343071 12.161175 # 1 50.0 400.0 0.1
+	cutkpc  0 45.000000 5.000000   # 1 1.0 100.0 0.1
+	slope   0 4.000000 0.000000
+	vdslope 0 4.000000 0.000000
+	vdscatter 0 0.000000 0.000000
+	rcutscatter 0 0.000000 0.000000
+	end
+cline
+	nplan    0
+	dmax     0.000000
+	algorithm   MARCHINGSQUARES
+	limitHigh   10.0
+	limitLow    1.000000
+	end
+grande
+	iso         0 0 0.000000 0.000000 0.000000
+	name        best
+	profil      0 0
+	contour     1 0
+	large_dist  0.300000
+	end
+cosmologie
+	model       1
+	H0         70.000000
+	omegaM     0.300000
+	omegaX     0.700000
+	omegaK     0.
+	wX         -1.000000
+	wa         0.000000
+	end
+cosmolimit
+	omegaM		0 0.000000 0.000000
+	omegaX		0 0.000000 0.000000
+	wX		0 0.000000 0.000000
+	wa 	0 0.000000 0.000000
+	end
+champ
+	xmin     -70.000000
+	xmax     70.000000
+	ymin     -70.000000
+	ymax     70.000000
+	end
+fini

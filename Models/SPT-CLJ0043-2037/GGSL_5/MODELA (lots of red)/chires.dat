@@ -1,0 +1,10 @@
+chi multiples
+ N    ID    z   Narcs    chip    chix    chiy    chia   rmss     rmsi    dx      dy    nwarn
+ 0    5.1 4.500   1      0.00    0.00    0.00    0.00   0.004    0.02   -0.01   -0.02  0
+ 0    5.2 4.500   1      0.00    0.00    0.00    0.00   0.004    0.01    0.00    0.01  0
+ 0    5.1 4.500   2      0.00    0.00    0.00    0.00   0.004    0.02    N/A     N/A   0
+chimul                   0.00    0.00    0.00    0.00   0.004    0.02    N/A     N/A   0
+log(Likelihood)         -0.90
+
+chitot           0.00
+log(Likelihood)    -0.90

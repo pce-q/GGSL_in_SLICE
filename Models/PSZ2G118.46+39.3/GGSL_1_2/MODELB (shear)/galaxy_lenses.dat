@@ -1,0 +1,5 @@
+# galaxy_lenses.dat — pelli catalog; WCS ↔ reference=3 round-trip check
+# from ggsl_1_2.reg
+# reference (GL.1 / O1 origin): 208.6393624 77.2572742
+# GL.1: original WCS (reference)
+GL.1 208.6393624 77.2572742 0.310 0.604 39.819 0.3967 0.0

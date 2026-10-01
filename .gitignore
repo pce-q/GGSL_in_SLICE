@@ -1,0 +1,33 @@
+# Ignore all files by default
+*
+
+# Allow walking directories
+!*/
+
+# Tracked markers and docs
+!.gitignore
+!README.md
+!**/.gitkeep
+
+# Region and DS9 backup files
+!**/*.reg
+!**/*.bck
+
+# JWST: PNGs and JSON
+!JWST_SLICE_data/**/*.png
+!JWST_SLICE_data/**/*.PNG
+!JWST_SLICE_data/**/*.json
+!JWST_SLICE_data/**/*.JSON
+
+# Models: everything except FITS / nested git
+!Models/**
+Models/**/*.fits
+Models/**/*.FITS
+Models/**/*.fit
+Models/**/*.FIT
+Models/**/*.fits.gz
+Models/.git/
+Models/.git_nested_backup/
+
+# Keep HST data local-only
+HST_SLICE_data/
