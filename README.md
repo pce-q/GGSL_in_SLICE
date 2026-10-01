@@ -2,7 +2,7 @@
 
 Supporting data for a scientific report on a systematic search of galaxy–galaxy strong lensing (GGSL) candidates in dense environments among SLICE galaxy clusters ($z \sim 0.20$ -- $0.83$), using JWST and HST imaging.
 
-Across 50 cluster lines-of-sight, 172 GGSL candidates were catalogued and 29 systems (21 clusters) were modeled with Lenstool. This repository holds the working files underlying that report and mirrors the layout used during the analysis; the actual imaging data are gitignored and remain local.
+Across 50 cluster lines-of-sight, 172 candidates were catalogued and 29 GGSL systems (spanning 21 clusters) were modeled with Lenstool. This repository holds the working files underlying that report and mirrors the layout used during the analysis; the actual imaging data are gitignored and remain local.
 
 ## Layout
 
