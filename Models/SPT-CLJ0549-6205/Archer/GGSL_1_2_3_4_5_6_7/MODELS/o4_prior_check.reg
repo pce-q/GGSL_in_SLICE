@@ -1,0 +1,15 @@
+# Region file format: DS9 version 4.1
+# O4 prior check for MODELS/input_fixed.dat
+# Circles: galaxy centres + O4 at circumcentre; dashed circle = circumcircle;
+# box = min RA-Dec-aligned prior on O4 centre (relative arcsec about ref=GL.1).
+global color=green dashlist=8 3 width=1 font="helvetica 10 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+fk5
+circle(87.3042528,-62.0775655,0.15") # color=cyan width=2 font="helvetica 12 normal" text={GL.1/O1}
+circle(87.3031153,-62.0767410,0.15") # color=cyan width=2 font="helvetica 12 normal" text={GL.2/O2}
+circle(87.3042495,-62.0766157,0.15") # color=cyan width=2 font="helvetica 12 normal" text={GL.3/O3}
+circle(87.3038902,-62.0770909,0.15") # color=magenta width=2 font="helvetica 12 normal" text={O4_circum}
+circle(87.3040451,-62.0770827,0.15") # color=yellow width=2 font="helvetica 12 normal" text={O4_old}
+circle(87.3038902,-62.0770909,1.814691") # color=magenta dash=1 width=2 font="helvetica 12 normal" text={circumcircle}
+box(87.3036840,-62.0770906,1.917642",3.419280",0) # color=red width=2 font="helvetica 12 normal" text={O4 min box}
+box(87.3038902,-62.0770909,2.566361",2.566361",0) # color=orange width=2 font="helvetica 12 normal" text={square in circumcircle}
+box(87.3038902,-62.0770909,3.629382",3.629382",0) # color=white width=1 dash=1 font="helvetica 12 normal" text={square around circumcircle}
