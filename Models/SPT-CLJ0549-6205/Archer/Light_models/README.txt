@@ -12,6 +12,8 @@ fits_<tag>/<band>_<method>/
   model.fits      total model image (same WCS/grid as data)
   model_*.fits    optional components (hybrid / MGE)
   half_light_ellipses.csv   (hybrid tags) true Re ellipses
+                  theta_deg_math = major-axis angle CCW from +x (west) of the
+                  north-up cutout; take it modulo 180 (e.g. -83.72 = 96.28)
 
 figures/
   <tag>/          subtraction / quicklook PNGs for that model
